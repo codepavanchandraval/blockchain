@@ -16,7 +16,7 @@ public class BlockChainMainUI extends BaseUI {
 		VerticalLayout layout = new VerticalLayout();
 		MainComponent component = new MainComponent(bean);
 		layout.addComponent(new Panel(component));
-		Button cancel = new Button("Cancel");
+		Button cancel = new Button("Back");
 		layout.addComponent(cancel);
 		cancel.addClickListener(event -> Ui.getNavigator().navigateTo("BlockChainUI"));
 		setCompositionRoot(layout);
